@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Management</title>
+
+<style>
+	
+	body {
+		display: flex; 
+		justify-content: center;
+		align-items: center;
+	}
+	
+	form {
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	form fieldset {
+		display: flex; 
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 20%;
+		gap: 10px;
+	}
+	
+	h1 {
+		text-decoration: underline;
+	}
+	
+	.center {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 10px;
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+	
+	<form action="addEmpServlet" method="post">
+		<h1>Employee Management Software</h1>
+		<fieldset>
+			<legend>Add An Employee: </legend>
+			
+			<div>
+				<label for="firstName">First Name: </label>
+				<input type="text" name="firstName" id="firstName">
+			</div>
+			<div>
+				<label for="lastName">Last Name: </label>
+				<input type="text" name="lastName" id="lastName">
+			</div>
+			
+			<div class="center">
+				<input type="submit" value="Add Employee">
+				<button><a href="viewEmpRosterServlet">View Employee Roster</a></button>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
