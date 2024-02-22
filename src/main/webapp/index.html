@@ -44,7 +44,6 @@
 <body>
 	
 	<form action="addEmpServlet" method="post">
-		<h1>Employee Management Software</h1>
 		<fieldset>
 			<legend>Add An Employee: </legend>
 			
@@ -63,5 +62,27 @@
 			</div>
 		</fieldset>
 	</form>
+	<form action="addManServlet" method="post">
+		<fieldset>
+			<legend>Add A Manager: </legend>
+			
+			<div>
+				<label for="firstName">First Name: </label>
+				<input type="text" name="firstName" id="firstName">
+			</div>
+			<div>
+				<label for="lastName">Last Name: </label>
+				<input type="text" name="lastName" id="lastName">
+			</div>
+			
+			<div class="center">
+				<input type="submit" value="Add Manager">
+				<button><a href="viewManRosterServlet">View Manager Roster</a></button>
+			</div>
+		</fieldset>
+	</form>
+	<div>
+		<button><a href="viewFullRosterServlet">View Full Roster</a></button>
+	</div>
 </body>
 </html>
